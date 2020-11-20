@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<title>cccwebtest</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="result">
+				<p id="result">0</p>
+			</div>
+			<div class="firstRow">
+				<button id="clear" style="width: 149px;" onclick="clearResult()">C</button>
+				<button id="perc" onclick="percentage()">%</button>
+				<button id="divide" onclick="display('/', this.id)">/</button>
+			</div>
+			<div class="secondRow">
+				<button id="seven" onclick="display('7', this.id)">7</button>
+				<button id="eight" onclick="display('8', this.id)">8</button>
+				<button id="nine" onclick="display('9', this.id)">9</button>
+				<button id="multiply" onclick="display('*', this.id)">*</button>
+			</div>
+			<div class="thirdRow">
+				<button id="four" onclick="display('4', this.id)">4</button>
+				<button id="five" onclick="display('5', this.id)">5</button>
+				<button id="six" onclick="display('6', this.id)">6</button>
+				<button id="minus" onclick="display('-', this.id)">-</button>
+			</div>
+			<div class="fourthRow">
+				<button id="one" onclick="display('1', this.id)">1</button>
+				<button id="two" onclick="display('2', this.id)">2</button>
+				<button id="three" onclick="display('3', this.id)">3</button>
+				<button id="plus" onclick="display('+', this.id)">+</button>
+			</div>
+			<div class="fifthRow">
+				<button id="zero" style="width: 149px;" onclick="display('0')">0</button>
+				<button id="dot" onclick="display('.', this.id)">.</button>
+				<button id="equal" onclick="calculation()">=</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
